@@ -1,6 +1,11 @@
-h1, h2, h3, h4, p, li {
+* {
+    /*border-top: 5px solid #1098ad;*/
+}
+
+body {
     font-family: sans-serif;
     color: #444;
+    border-top: 5px solid #1098ad;
 }
 
 h1, h2, h3 {
@@ -99,7 +104,7 @@ a:link {
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: #1098ad;
 }
 
@@ -115,3 +120,7 @@ a:active {
 }
 
 /* LVHA */
+
+nav {
+    font-size: 18px;
+}
