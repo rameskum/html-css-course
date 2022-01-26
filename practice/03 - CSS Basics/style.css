@@ -22,7 +22,6 @@ body {
     padding-right: 40px;*/
     padding: 20px 40px;
     margin-bottom: 60px;
-    height: 80px;
 }
 
 nav {
@@ -51,7 +50,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 24px;
     text-transform: uppercase;
     font-style: italic;
 }
@@ -139,6 +138,13 @@ article p:first-child {
 a:link {
     color: #1098ad;
     text-decoration: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
 }
 
 a:visited {
