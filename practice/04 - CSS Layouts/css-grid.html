@@ -55,36 +55,54 @@
 			/*gap: 10px;*/
 			column-gap: 20px;
 			row-gap: 30px;
+			display: none;
 		}
 
-		.el--8 {
+		/*.el--8 {
 			grid-column: 2 / 3;
 			grid-row: 1;
 		}
 
 		.el--2 {
-			/*grid-column: 1 / 4;*/
-			/*grid-column: 1 / span 4;*/
-			grid-column: 1 / -1; /* span all the way to end */
+			!*grid-column: 1 / 4;*!
+			!*grid-column: 1 / span 4;*!
+			grid-column: 1 / -1; !* span all the way to end *!
 			grid-row: 2;
 		}
 
 		.el--6 {
 			grid-row: 3 / 6;
-		}
+		}*/
 
 		.container--2 {
-			display: none;
 			/* STARTER */
 			font-family: sans-serif;
 			background-color: black;
 			font-size: 40px;
-			margin: 100px;
+			margin: 40px;
 
-			width: 1000px;
+			width: 700px;
 			height: 600px;
 
 			/* CSS GRID */
+			display: grid;
+			grid-template-columns: 125px 200px 125px;
+			grid-template-rows: 250px 100px;
+			gap: 50px;
+			/* Aligning tracks inside container: distribute empty space*/
+			justify-content: center;
+			/*justify-content: space-between;*/
+			align-content: center;
+			/*align-content: space-between;*/
+
+			/* aligning Items inside cell : moving items around inside cells */
+			align-items: center;
+			justify-items: center;
+		}
+
+		.el--3 {
+			align-self: end;
+			justify-self: end;
 		}
 	</style>
 	<title>CSS Grid</title>
